@@ -1,0 +1,27 @@
+{
+  "name": "@mjstahl/called",
+  "version": "0.5.0",
+  "description": "Simple abstraction for communicating that a specific function has been called.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjstahl/called.git"
+  },
+  "keywords": [
+    "events",
+    "signals",
+    "emitter",
+    "async"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mjstahl/called/issues"
+  },
+  "homepage": "https://github.com/mjstahl/called#readme",
+  "devDependencies": {
+    "ava": "^0.25.0"
+  }
+}
