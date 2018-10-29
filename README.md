@@ -42,7 +42,7 @@ result of the wrapper function's execution.
     return x + y
   })
   const unsubscribe = add.subscribe(function (err, result) {
-    const output = (err) ? `Uh oh ${err}` : `Hello ${result}`; 
+    const output = (err) ? `Uh oh ${err}` : `Hello ${result}`
     console.log(output)
   })
   add(2, 3)
