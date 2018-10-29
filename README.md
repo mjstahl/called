@@ -19,7 +19,7 @@ Take a single Function argument and returns a wrapped Function that is
 semantically equivalent and accepts the same number of arguments.
 
 ```js
-  var add = called(function (x, y) {
+  const add = called(function (x, y) {
     return x + y
   })
   add(2, 3)
@@ -38,15 +38,12 @@ occurred, the error argument will be null, and the 1st argument will be the
 result of the wrapper function's execution.
 
 ```js
-  var add = called(function (x, y) {
+  const add = called(function (x, y) {
     return x + y
   })
-  var unsubscribe = add.subscribe(function (err, result) {
-    if (err !== null) {
-      console.log('Uh oh ', err)
-      return
-    }
-    console.log('Hello ', result)
+  const unsubscribe = add.subscribe(function (err, result) {
+    const output = (err) ? `Uh oh ${err}` : `Hello ${result}`; 
+    console.log(output)
   })
   add(2, 3)
 
