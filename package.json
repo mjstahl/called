@@ -1,6 +1,6 @@
 {
   "name": "@mjstahl/called",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "Simple abstraction for communicating that a specific function has been called.",
   "main": "index.js",
   "scripts": {
